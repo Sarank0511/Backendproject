@@ -29,7 +29,7 @@ DEBUG = True
 
 WED_HOSTS = os.environ.get(
  "DJANGO_ALLOWED_HOSTS",
- "localhost,127.0.0.1,https://backendproject-lp9i.onrender.com"
+ "localhost,127.0.0.1,backendproject-lp9i.onrender.com"
 ).split(",")
 
 
