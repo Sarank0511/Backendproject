@@ -25,13 +25,17 @@ SECRET_KEY = 'django-insecure-y#lv@ls255+cyx$f6d%@2yxp^y_egg)6_*mt!#@y4fphy+)rl2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = [
+ "localhost",
+    "127.0.0.1",
+    "backendproject-lp9i.onrender.com",
+]
 
-WED_HOSTS = os.environ.get(
- "backendproject-lp9i.onrender.com",
- "DJANGO_ALLOWED_HOSTS",
- "localhost,127.0.0.1,"
-).split(",")
+# WED_HOSTS = os.environ.get(
+#  "backendproject-lp9i.onrender.com",
+#  "DJANGO_ALLOWED_HOSTS",
+#  "localhost,127.0.0.1,"
+# ).split(",")
 
 
 # Application definition
