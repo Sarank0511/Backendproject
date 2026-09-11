@@ -56,7 +56,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 
 ]
@@ -146,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOWED_ORIGINS = [
- "https://frontendproject-self.vercel.app/", # your deployed frontend
+ "https://frontendproject-self.vercel.app", # your deployed frontend
  "http://localhost:5173", # local React app (dev)
 ]
 CORS_ALLOW_ALL_ORIGINS = False
